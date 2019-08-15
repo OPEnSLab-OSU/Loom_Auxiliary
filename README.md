@@ -7,7 +7,7 @@ General Loom and lab non-code files
 
 To install the dependencies:
 
-- Download the repository as a zip file
+- Download the repository as a zip file (or just all the dependencies [here](https://github.com/OPEnSLab-OSU/Loom_Auxiliary/blob/master/Dependencies/All_Dependencies.zip))
 - Unzip
 - If you need all dependencies
   - Unzip 'All_Dependencies' and move the contents to the Arduino libraries folder
