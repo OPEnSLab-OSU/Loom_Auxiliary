@@ -14,3 +14,7 @@ To install the dependencies:
 - If you need only some dependences
   - Open the 'Dependencies_Individual' folder
   - Unzip the dependencies you need and move their contents to the Arduino libraries folder
+
+## Note
+
+If you are having issues compiling, make sure none of the library folder contain a a folder of the same name. If so, move the contents of the nested folder into the outer folder. 
