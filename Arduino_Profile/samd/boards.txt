@@ -1,0 +1,49 @@
+# File: 	boards.txt
+# brief:	File that specifies all the boards supported in Loom and writes the commands to be used by Arduino IDE
+# author:	Adam Kerr, based off the SAM D21 architecture work from Arduino LLC.
+# date: 	2020
+# 
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+# Loomified Adafruit Feather M0
+
+loom.name=Loomified Feather M0
+loom.vid.0=0x239A
+loom.pid.0=0x800B
+loom.vid.1=0x239A
+loom.pid.1=0x000B
+loom.vid.2=0x239A
+loom.pid.2=0x0015
+loom.upload.tool=adafruit:bossac
+loom.upload.protocol=sam-ba
+loom.upload.maximum_size=262144
+loom.upload.offset=0x2000
+loom.upload.use_1200bps_touch=true
+loom.upload.wait_for_upload_port=true
+loom.upload.native_usb=true
+loom.build.mcu=cortex-m0plus
+loom.build.f_cpu=48000000L
+loom.build.usb_product="Feather M0"
+loom.build.usb_manufacturer="Adafruit"
+loom.build.board=SAMD_ZERO
+loom.build.core=adafruit:arduino
+loom.build.extra_flags=-DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS -DADAFRUIT_FEATHER_M0 -D__SAMD21G18A__ {build.usb_flags}
+loom.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+loom.build.openocdscript=openocd_scripts/feather_m0.cfg
+loom.build.variant=adafruit:feather_m0
+loom.build.variant_system_lib=
+loom.build.vid=0x239A
+loom.build.pid=0x800B
+loom.bootloader.tool=adafruit:openocd
+loom.menu.usbstack.arduino=Arduino
+loom.menu.usbstack.tinyusb=TinyUSB
+loom.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+loom.menu.debug.off=Off
+loom.menu.debug.on=On
+loom.menu.debug.on.build.flags.debug=-g
