@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-        "name": "Loom",
+        "name": "loom",
         "maintainer": "OPEnS Lab",
         "websiteURL": "https://github.com/OPEnSLab-OSU/Loom",
         "email": "open.sensing@oregonstate.edu",
