@@ -12,7 +12,7 @@
           {
             "name": "Loom SAMD Boards",
             "architecture": "samd",
-            "version": "1.0.0",
+            "version": "2.4.0",
             "category": "contributed",
             "help": {
               "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
