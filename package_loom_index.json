@@ -17,7 +17,7 @@
             "help": {
               "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
             },
-            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/raw/master/Arduino_Profile/samd.zip",
+            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/releases/download/2.4.0/samd.zip",
             "archiveFileName": "samd.zip",
             "size": "20439",
             "boards": [
