@@ -12,6 +12,23 @@
           {
             "name": "Loom SAMD Boards",
             "architecture": "samd",
+            "version": "2.5.1",
+            "category": "contributed",
+            "help": {
+              "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
+            },
+            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/releases/download/2.5.1/samd.zip",
+            "archiveFileName": "samd.zip",
+            "size": "20439",
+            "boards": [
+              {
+                "name": "Loomified Adafruit Feather M0 (SAMD21)"
+              }
+            ]
+          },
+          {
+            "name": "Loom SAMD Boards",
+            "architecture": "samd",
             "version": "2.5.0",
             "category": "contributed",
             "help": {
