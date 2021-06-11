@@ -1,84 +1,34 @@
 {
   "packages": [
     {
-        "name": "loom",
-        "maintainer": "OPEnS Lab",
-        "websiteURL": "https://github.com/OPEnSLab-OSU/Loom",
-        "email": "open.sensing@oregonstate.edu",
-        "help":{
-          "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
-        },
-        "platforms": [
-          {
-            "name": "Loom SAMD Boards",
-            "architecture": "samd",
-            "version": "2.5.1",
-            "category": "contributed",
-            "help": {
-              "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
-            },
-            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/releases/download/2.5.1/samd.zip",
-            "archiveFileName": "samd.zip",
-            "size": "20439",
-            "boards": [
-              {
-                "name": "Loomified Adafruit Feather M0 (SAMD21)"
-              }
-            ]
+      "name": "loom",
+      "maintainer": "OPEnS Lab",
+      "websiteURL": "https://github.com/OPEnSLab-OSU/Loom",
+      "email": "open.sensing@oregonstate.edu",
+      "help":{
+        "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
+      },
+      "platforms": [
+        {
+          "name": "Loom SAMD Boards",
+          "architecture": "samd",
+          "version": "0.0.1",
+          "category": "contributed",
+          "help": {
+            "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
           },
-          {
-            "name": "Loom SAMD Boards",
-            "architecture": "samd",
-            "version": "2.5.0",
-            "category": "contributed",
-            "help": {
-              "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
-            },
-            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/releases/download/2.5.0/samd.zip",
-            "archiveFileName": "samd.zip",
-            "size": "20439",
-            "boards": [
-              {
-                "name": "Loomified Adafruit Feather M0 (SAMD21)"
-              }
-            ]
-          },
-          {
-            "name": "Loom SAMD Boards",
-            "architecture": "samd",
-            "version": "2.4.1",
-            "category": "contributed",
-            "help": {
-              "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
-            },
-            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/releases/download/2.4.1/samd.zip",
-            "archiveFileName": "samd.zip",
-            "size": "20439",
-            "boards": [
-              {
-                "name": "Loomified Adafruit Feather M0 (SAMD21)"
-              }
-            ]
-          },
-          {
-            "name": "Loom SAMD Boards",
-            "architecture": "samd",
-            "version": "2.4.0",
-            "category": "contributed",
-            "help": {
-              "online": "https://github.com/OPEnSLab-OSU/Loom/issues"
-            },
-            "url": "https://github.com/OPEnSLab-OSU/Loom_Auxiliary/releases/download/2.4.0/samd.zip",
-            "archiveFileName": "samd.zip",
-            "size": "20439",
-            "boards": [
-              {
-                "name": "Loomified Adafruit Feather M0 (SAMD21)"
-              }
-            ]
-          }
-        ],
-        "tools":[]
+          "url": "https://raw.githubusercontent.com/OPEnSLab-OSU/Loom_Auxiliary/exploration/Arduino_Profile/loom-samd-0.0.1.tar.bz2",
+          "archiveFileName": "loom-samd-0.0.1.tar.bz2",
+          "checksum": "SHA-256:2e02982c65abfb95515130a5186bf18f376d354d7b7c3bc36453e7a567623f2a",
+          "size": "5421",
+          "boards": [
+            {
+              "name": "Loomified Adafruit Feather M0 (SAMD21)"
+            }
+          ]
+        }
+      ],
+      "tools":[]
     }
   ]
 }

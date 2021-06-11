@@ -1,13 +1,12 @@
 # File: 	boards.txt
 # brief:	File that specifies all the boards supported in Loom and writes the commands to be used by Arduino IDE
-# author:	Adam Kerr, based off the SAM D21 architecture work from Arduino LLC.
-# date: 	2020
+# author:	Adam Kerr, Luke Goertzen, based off the SAM D21 architecture work from Arduino LLC.
+# date: 	2021
 # 
+
 
 menu.cache=Cache
 menu.speed=CPU Speed
-menu.opt=Optimize
-menu.maxqspi=Max QSPI
 menu.usbstack=USB Stack
 menu.debug=Debug
 
@@ -47,3 +46,79 @@ loom.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
 loom.menu.debug.off=Off
 loom.menu.debug.on=On
 loom.menu.debug.on.build.flags.debug=-g
+
+
+# Internet Build Toggle
+menu.internet=Internet
+loom.menu.internet.wifi=Wifi
+loom.menu.internet.wifi.compiler.loom.include.internet= -DLOOM_INCLUDE_WIFI
+loom.menu.internet.ethernet=Ethernet
+loom.menu.internet.ethernet.compiler.loom.include.internet= -DLOOM_INCLUDE_ETHERNET
+loom.menu.internet.wifi_ethernet=Wifi and Ethernet
+loom.menu.internet.wifi_ethernet.compiler.loom.include.internet= -DLOOM_INCLUDE_WIFI -DLOOM_INCLUDE_ETHERNET
+loom.menu.internet.lte=LTE
+loom.menu.internet.lte.compiler.loom.include.internet= -DLOOM_INCLUDE_LTE
+loom.menu.internet.none=None
+
+# Radio Build Toggle
+menu.radio=Radios
+loom.menu.radio.enabled=Enabled
+loom.menu.radio.enabled.compiler.loom.include.radio= -D LOOM_INCLUDE_RADIOS
+loom.menu.radio.disabled=Disabled
+
+# Sensor Build Toggle
+menu.sensor=Sensors
+loom.menu.sensor.enabled=Enabled
+loom.menu.sensor.enabled.compiler.loom.include.sensor= -D LOOM_INCLUDE_SENSORS
+loom.menu.sensor.disabled=Disabled
+
+# Actuators Build Toggle
+menu.actuator=Actuators
+loom.menu.actuator.enabled=Enabled
+loom.menu.actuator.enabled.compiler.loom.include.actuator= -D LOOM_INCLUDE_ACTUATORS
+loom.menu.actuator.disabled=Disabled
+
+# Max Build Toggle
+menu.max=Max
+loom.menu.max.disabled=Disabled
+loom.menu.max.enabled=Enabled
+loom.menu.max.enabled.compiler.loom.include.max= -D LOOM_INCLUDE_MAX
+
+# Loom Debug Prints
+menu.debug_prints=Loom Debug Prints
+loom.menu.debug_prints.on=On
+loom.menu.debug_prints.on.compiler.loom.debug= -D LOOM_DEBUG=1
+loom.menu.debug_prints.off=Off
+
+# Flash Config Toggle
+menu.flash_config=Flash Config
+loom.menu.flash_config.off=Off
+loom.menu.flash_config.on=On
+loom.menu.flash_config.on.compiler.loom.flash_config= -D LOOM_FLASH_CONFIG=1
+
+# Config Selection
+menu.config_select=Config Selection
+
+# YQ V4
+# Yaml config with .yaml extension
+loom.menu.config_select.yaml = .yaml
+loom.menu.config_select.yaml.loom.config_select = yaml
+loom.menu.config_select.yaml.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && echo -D LCONFIG=$(yq e -I0 -j {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+
+# Json config with .json extension
+loom.menu.config_select.json = .json
+loom.menu.config_select.json.loom.config_select = json
+loom.menu.config_select.json.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && jq < {config_path} > /dev/null && echo -D LCONFIG=$(jq -c < {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+
+# Yaml config with .h extension (so it can be opened in IDE)
+loom.menu.config_select.h_yaml = .h (Yaml)
+loom.menu.config_select.h_yaml.loom.config_select = h
+loom.menu.config_select.h_yaml.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && echo -D LCONFIG=$(yq e -I0 -j {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+
+# Json config with .h extension (so it can be opened in IDE)
+loom.menu.config_select.h_json = .h (Json)
+loom.menu.config_select.h_json.loom.config_select = h
+loom.menu.config_select.h_json.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && jq < {config_path} > /dev/null && echo -D LCONFIG=$(jq -c < {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+
+# Don't generate config -D string
+loom.menu.config_select.none = None
