@@ -12,113 +12,113 @@ menu.debug=Debug
 
 # Loomified Adafruit Feather M0
 
-loom.name=Loomified Feather M0
-loom.vid.0=0x239A
-loom.pid.0=0x800B
-loom.vid.1=0x239A
-loom.pid.1=0x000B
-loom.vid.2=0x239A
-loom.pid.2=0x0015
-loom.upload.tool=adafruit:bossac
-loom.upload.protocol=sam-ba
-loom.upload.maximum_size=262144
-loom.upload.offset=0x2000
-loom.upload.use_1200bps_touch=true
-loom.upload.wait_for_upload_port=true
-loom.upload.native_usb=true
-loom.build.mcu=cortex-m0plus
-loom.build.f_cpu=48000000L
-loom.build.usb_product="Feather M0"
-loom.build.usb_manufacturer="Adafruit"
-loom.build.board=SAMD_ZERO
-loom.build.core=adafruit:arduino
-loom.build.extra_flags=-DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS -DADAFRUIT_FEATHER_M0 -D__SAMD21G18A__ {build.usb_flags}
-loom.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
-loom.build.openocdscript=openocd_scripts/feather_m0.cfg
-loom.build.variant=adafruit:feather_m0
-loom.build.variant_system_lib=
-loom.build.vid=0x239A
-loom.build.pid=0x800B
-loom.bootloader.tool=adafruit:openocd
-loom.menu.usbstack.arduino=Arduino
-loom.menu.usbstack.tinyusb=TinyUSB
-loom.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
-loom.menu.debug.off=Off
-loom.menu.debug.on=On
-loom.menu.debug.on.build.flags.debug=-g
+loom_feather_m0.name=Loomified Feather M0
+loom_feather_m0.vid.0=0x239A
+loom_feather_m0.pid.0=0x800B
+loom_feather_m0.vid.1=0x239A
+loom_feather_m0.pid.1=0x000B
+loom_feather_m0.vid.2=0x239A
+loom_feather_m0.pid.2=0x0015
+loom_feather_m0.upload.tool=adafruit:bossac
+loom_feather_m0.upload.protocol=sam-ba
+loom_feather_m0.upload.maximum_size=262144
+loom_feather_m0.upload.offset=0x2000
+loom_feather_m0.upload.use_1200bps_touch=true
+loom_feather_m0.upload.wait_for_upload_port=true
+loom_feather_m0.upload.native_usb=true
+loom_feather_m0.build.mcu=cortex-m0plus
+loom_feather_m0.build.f_cpu=48000000L
+loom_feather_m0.build.usb_product="Feather M0"
+loom_feather_m0.build.usb_manufacturer="Adafruit"
+loom_feather_m0.build.board=SAMD_ZERO
+loom_feather_m0.build.core=adafruit:arduino
+loom_feather_m0.build.extra_flags=-DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS -DADAFRUIT_FEATHER_M0 -D__SAMD21G18A__ {build.usb_flags}
+loom_feather_m0.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+loom_feather_m0.build.openocdscript=openocd_scripts/feather_m0.cfg
+loom_feather_m0.build.variant=adafruit:feather_m0
+loom_feather_m0.build.variant_system_lib=
+loom_feather_m0.build.vid=0x239A
+loom_feather_m0.build.pid=0x800B
+loom_feather_m0.bootloader.tool=adafruit:openocd
+loom_feather_m0.menu.usbstack.arduino=Arduino
+loom_feather_m0.menu.usbstack.tinyusb=TinyUSB
+loom_feather_m0.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+loom_feather_m0.menu.debug.off=Off
+loom_feather_m0.menu.debug.on=On
+loom_feather_m0.menu.debug.on.build.flags.debug=-g
 
 
 # Internet Build Toggle
 menu.internet=Internet
-loom.menu.internet.wifi=Wifi
-loom.menu.internet.wifi.compiler.loom.include.internet= -DLOOM_INCLUDE_WIFI
-loom.menu.internet.ethernet=Ethernet
-loom.menu.internet.ethernet.compiler.loom.include.internet= -DLOOM_INCLUDE_ETHERNET
-loom.menu.internet.wifi_ethernet=Wifi and Ethernet
-loom.menu.internet.wifi_ethernet.compiler.loom.include.internet= -DLOOM_INCLUDE_WIFI -DLOOM_INCLUDE_ETHERNET
-loom.menu.internet.lte=LTE
-loom.menu.internet.lte.compiler.loom.include.internet= -DLOOM_INCLUDE_LTE
-loom.menu.internet.none=None
+loom_feather_m0.menu.internet.none=None
+loom_feather_m0.menu.internet.wifi=Wifi
+loom_feather_m0.menu.internet.wifi.compiler.loom.include.internet= -DLOOM_INCLUDE_WIFI
+loom_feather_m0.menu.internet.ethernet=Ethernet
+loom_feather_m0.menu.internet.ethernet.compiler.loom.include.internet= -DLOOM_INCLUDE_ETHERNET
+loom_feather_m0.menu.internet.wifi_ethernet=Wifi and Ethernet
+loom_feather_m0.menu.internet.wifi_ethernet.compiler.loom.include.internet= -DLOOM_INCLUDE_WIFI -DLOOM_INCLUDE_ETHERNET
+loom_feather_m0.menu.internet.lte=LTE
+loom_feather_m0.menu.internet.lte.compiler.loom.include.internet= -DLOOM_INCLUDE_LTE
 
 # Radio Build Toggle
 menu.radio=Radios
-loom.menu.radio.enabled=Enabled
-loom.menu.radio.enabled.compiler.loom.include.radio= -D LOOM_INCLUDE_RADIOS
-loom.menu.radio.disabled=Disabled
+loom_feather_m0.menu.radio.disabled=Disabled
+loom_feather_m0.menu.radio.enabled=Enabled
+loom_feather_m0.menu.radio.enabled.compiler.loom.include.radio= -D LOOM_INCLUDE_RADIOS
 
 # Sensor Build Toggle
 menu.sensor=Sensors
-loom.menu.sensor.enabled=Enabled
-loom.menu.sensor.enabled.compiler.loom.include.sensor= -D LOOM_INCLUDE_SENSORS
-loom.menu.sensor.disabled=Disabled
+loom_feather_m0.menu.sensor.disabled=Disabled
+loom_feather_m0.menu.sensor.enabled=Enabled
+loom_feather_m0.menu.sensor.enabled.compiler.loom.include.sensor= -D LOOM_INCLUDE_SENSORS
 
 # Actuators Build Toggle
 menu.actuator=Actuators
-loom.menu.actuator.enabled=Enabled
-loom.menu.actuator.enabled.compiler.loom.include.actuator= -D LOOM_INCLUDE_ACTUATORS
-loom.menu.actuator.disabled=Disabled
+loom_feather_m0.menu.actuator.disabled=Disabled
+loom_feather_m0.menu.actuator.enabled=Enabled
+loom_feather_m0.menu.actuator.enabled.compiler.loom.include.actuator= -D LOOM_INCLUDE_ACTUATORS
 
 # Max Build Toggle
 menu.max=Max
-loom.menu.max.disabled=Disabled
-loom.menu.max.enabled=Enabled
-loom.menu.max.enabled.compiler.loom.include.max= -D LOOM_INCLUDE_MAX
+loom_feather_m0.menu.max.disabled=Disabled
+loom_feather_m0.menu.max.enabled=Enabled
+loom_feather_m0.menu.max.enabled.compiler.loom.include.max= -D LOOM_INCLUDE_MAX
 
 # Loom Debug Prints
 menu.debug_prints=Loom Debug Prints
-loom.menu.debug_prints.on=On
-loom.menu.debug_prints.on.compiler.loom.debug= -D LOOM_DEBUG=1
-loom.menu.debug_prints.off=Off
+loom_feather_m0.menu.debug_prints.off=Off
+loom_feather_m0.menu.debug_prints.on=On
+loom_feather_m0.menu.debug_prints.on.compiler.loom.debug= -D LOOM_DEBUG=1
 
 # Flash Config Toggle
 menu.flash_config=Flash Config
-loom.menu.flash_config.off=Off
-loom.menu.flash_config.on=On
-loom.menu.flash_config.on.compiler.loom.flash_config= -D LOOM_FLASH_CONFIG=1
+loom_feather_m0.menu.flash_config.off=Off
+loom_feather_m0.menu.flash_config.on=On
+loom_feather_m0.menu.flash_config.on.compiler.loom.flash_config= -D LOOM_FLASH_CONFIG=1
 
 # Config Selection
 menu.config_select=Config Selection
 
 # YQ V4
 # Yaml config with .yaml extension
-loom.menu.config_select.yaml = .yaml
-loom.menu.config_select.yaml.loom.config_select = yaml
-loom.menu.config_select.yaml.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && echo -D LCONFIG=$(yq e -I0 -j {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+loom_feather_m0.menu.config_select.yaml = .yaml
+loom_feather_m0.menu.config_select.yaml.loom.config_select = yaml
+loom_feather_m0.menu.config_select.yaml.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && echo -D LCONFIG=$(yq e -I0 -j {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
 
 # Json config with .json extension
-loom.menu.config_select.json = .json
-loom.menu.config_select.json.loom.config_select = json
-loom.menu.config_select.json.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && jq < {config_path} > /dev/null && echo -D LCONFIG=$(jq -c < {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+loom_feather_m0.menu.config_select.json = .json
+loom_feather_m0.menu.config_select.json.loom.config_select = json
+loom_feather_m0.menu.config_select.json.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && jq < {config_path} > /dev/null && echo -D LCONFIG=$(jq -c < {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
 
 # Yaml config with .h extension (so it can be opened in IDE)
-loom.menu.config_select.h_yaml = .h (Yaml)
-loom.menu.config_select.h_yaml.loom.config_select = h
-loom.menu.config_select.h_yaml.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && echo -D LCONFIG=$(yq e -I0 -j {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+loom_feather_m0.menu.config_select.h_yaml = .h (Yaml)
+loom_feather_m0.menu.config_select.h_yaml.loom.config_select = h
+loom_feather_m0.menu.config_select.h_yaml.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && echo -D LCONFIG=$(yq e -I0 -j {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
 
 # Json config with .h extension (so it can be opened in IDE)
-loom.menu.config_select.h_json = .h (Json)
-loom.menu.config_select.h_json.loom.config_select = h
-loom.menu.config_select.h_json.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && jq < {config_path} > /dev/null && echo -D LCONFIG=$(jq -c < {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
+loom_feather_m0.menu.config_select.h_json = .h (Json)
+loom_feather_m0.menu.config_select.h_json.loom.config_select = h
+loom_feather_m0.menu.config_select.h_json.loom.parse_config_pattern = bash -c "export PATH=$PATH:/usr/local/bin && jq < {config_path} > /dev/null && echo -D LCONFIG=$(jq -c < {config_path} | sed "s:\":\\\\':g;s:^:'\":;s:$:\"':") > {config_str_path} || { echo Config parse failed; exit 1; }"
 
 # Don't generate config -D string
-loom.menu.config_select.none = None
+loom_feather_m0.menu.config_select.none = None

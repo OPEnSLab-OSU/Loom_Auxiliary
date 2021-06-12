@@ -19,8 +19,8 @@
           },
           "url": "https://raw.githubusercontent.com/OPEnSLab-OSU/Loom_Auxiliary/exploration/Arduino_Profile/loom-samd-0.0.1.tar.bz2",
           "archiveFileName": "loom-samd-0.0.1.tar.bz2",
-          "checksum": "SHA-256:2e02982c65abfb95515130a5186bf18f376d354d7b7c3bc36453e7a567623f2a",
-          "size": "5421",
+          "checksum": "SHA-256:2fee585792913b251fbb6f6d64254cda6af60b01b43f3fce60832bcc6cbb9482",
+          "size": "4923",
           "boards": [
             {
               "name": "Loomified Adafruit Feather M0 (SAMD21)"
